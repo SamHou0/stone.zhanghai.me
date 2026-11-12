@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>红楼梦人物关系图</title>
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="characters.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="kicker">红楼梦脂批本新校电子版</p>
+      <h1>人物关系图</h1>
+      <p class="hero-sub">一图纵览贾、史、王、薛四大家族与主要人物的亲缘、婚姻、主仆和知己关系。点击图中人物或下方人物卡片可查看详情并高亮；在正文中点击人名也会跳转到本页对应人物。</p>
+      <div class="hero-actions">
+        <a href="00.htm">回到目录</a>
+        <a href="01.htm">开始阅读</a>
+        <a href="___left.htm">章节目录</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="graph-panel" aria-labelledby="graphTitle">
+      <div class="panel-heading">
+        <div>
+          <h2 id="graphTitle">关系总览</h2>
+          <p class="panel-note">示意图只列主要人物；完整人物索引与关系见下方。</p>
+        </div>
+        <div class="graph-tools">
+          <label class="search-box">
+            <span>搜索人物</span>
+            <input id="searchInput" type="search" placeholder="输入姓名、别名或身份，如：黛玉、凤姐、丫鬟" autocomplete="off">
+          </label>
+          <button id="resetButton" class="reset-button" type="button">重置高亮</button>
+        </div>
+      </div>
+
+      <div class="legend" aria-label="图例">
+        <span><i class="dot dot-ning"></i>宁国府</span>
+        <span><i class="dot dot-rong"></i>荣国府</span>
+        <span><i class="dot dot-shi"></i>史家</span>
+        <span><i class="dot dot-xue"></i>薛家</span>
+        <span><i class="dot dot-lin"></i>林家</span>
+        <span><i class="dot dot-servant"></i>丫鬟仆役</span>
+        <span><i class="dot dot-other"></i>其他</span>
+        <span class="legend-line"><i></i>亲缘</span>
+        <span class="legend-line legend-line-marriage"><i></i>婚姻/情感</span>
+        <span class="legend-line legend-line-servant"><i></i>主仆</span>
+      </div>
+
+      <div id="detailPanel" class="detail-panel" aria-live="polite">
+        <p class="detail-placeholder">点击图中人物或下方人物卡片，查看身份与关系。</p>
+      </div>
+
+      <div class="graph-scroll">
+        <svg id="relationGraph" viewBox="0 0 1240 760" role="img" aria-label="红楼梦主要人物关系图"></svg>
+      </div>
+    </section>
+
+    <section class="index-panel" aria-labelledby="indexTitle">
+      <div class="panel-heading">
+        <div>
+          <h2 id="indexTitle">人物索引</h2>
+          <p class="panel-note">按家族与身份分组。点击卡片可定位到关系图中的同一人物。</p>
+        </div>
+        <p id="searchCount" class="search-count"></p>
+      </div>
+      <div id="houses">
+<div class="static-fallback">
+<p class="static-note">以下为人物索引；启用 JavaScript 后可查看可交互的关系图。</p>
+<h3>贾府·宁国府</h3><ul>
+<li><strong>贾演</strong>（宁国府始祖）：随太祖起兵有功，封宁国公，宁国府一支的始祖。</li>
+<li><strong>贾代化</strong>（宁国公之子）：袭一等神威将军，贾敬、贾敷之父。</li>
+<li><strong>贾敬</strong>（贾代化之子）：袭爵后一味好道，烧丹炼汞，把家事都交给贾珍。</li>
+<li><strong>贾敷</strong>（贾代化长子）：八九岁时便夭折，未及成人。</li>
+<li><strong>贾珍</strong>（宁国府当家）：贾敬之子，尤氏之夫，贾蓉之父；荒淫奢侈，把宁国府翻了过来。</li>
+<li><strong>尤氏</strong>（贾珍续弦）：贾蓉继母，尤二姐、尤三姐的异母姐姐，性情软弱。</li>
+<li><strong>贾蓉</strong>（贾珍之子）：秦可卿之夫，后娶胡氏；轻薄浮浪，帮着父亲胡闹。</li>
+<li><strong>秦可卿</strong>（贾蓉之妻）：秦业养女，风流袅娜，托梦凤姐后早逝，是金陵十二钗之一。</li>
+<li><strong>秦业</strong>（营缮郎）：秦可卿养父、秦钟之父，家境清寒，望子成龙。</li>
+<li><strong>秦钟</strong>（秦业之子）：宝玉的同学与好友，与馒头庵小尼智能相恋，体弱早逝。</li>
+<li><strong>贾蔷</strong>（宁府正派玄孙）：贾珍养大的族中子弟，管理梨香院戏班，与龄官相恋。</li>
+<li><strong>贾芹</strong>（贾府旁支）：贾府旁支子弟，被派去管理水月庵。</li>
+<li><strong>贾瑞</strong>（贾代儒之孙）：觊觎王熙凤，被相思局捉弄，最终正照风月鉴而死。</li>
+<li><strong>贾代儒</strong>（贾府家塾塾师）：贾瑞祖父，掌管贾氏家塾，管教严厉。</li>
+<li><strong>尤二姐</strong>（尤氏异母妹）：贾琏偷娶的外室，被王熙凤赚入大观园折磨，吞金自逝。</li>
+<li><strong>尤三姐</strong>（尤氏异母妹）：刚烈泼辣，非柳湘莲不嫁；柳湘莲退婚，她自刎明志。</li>
+<li><strong>尤老娘</strong>（尤氏继母）：尤二姐、尤三姐之母，带着两个女儿依附宁国府。</li>
+<li><strong>焦大</strong>（宁府老仆）：跟随太爷打过仗的老仆，醉后大骂宁国府爬灰养小叔子。</li>
+<li><strong>宝珠</strong>（秦可卿丫鬟）：秦可卿死后，自愿认作义女守灵。</li>
+<li><strong>瑞珠</strong>（秦可卿丫鬟）：秦可卿死后触柱而亡，随主殉葬。</li>
+</ul>
+<h3>贾府·荣国府</h3><ul>
+<li><strong>贾源</strong>（荣国府始祖）：随太祖起兵有功，封荣国公，荣国府一支的始祖。</li>
+<li><strong>贾代善</strong>（荣国公之子）：贾母之夫，贾赦、贾政、贾敏之父，早逝。</li>
+<li><strong>贾母</strong>（荣国府老祖宗）：保龄侯史家小姐，贾代善之妻；慈爱又精明，是荣国府的定海神针。</li>
+<li><strong>贾赦</strong>（贾母长子）：袭一等将军，邢夫人之夫，贾琏、贾迎春之父；好色昏聩。</li>
+<li><strong>邢夫人</strong>（贾赦续弦）：贾迎春继母，悭吝寡情，凡事只知奉承贾赦。</li>
+<li><strong>贾政</strong>（贾母次子）：工部员外郎，王夫人之夫，元春、宝玉、探春、贾环之父；正统严父。</li>
+<li><strong>王夫人</strong>（贾政正妻）：王子腾之妹，元春、宝玉之母；表面慈厚，实则严厉。</li>
+<li><strong>贾敏</strong>（贾母之女）：林如海之妻，林黛玉之母，早逝。</li>
+<li><strong>贾琏</strong>（贾赦之子）：捐同知，王熙凤之夫，荣府管家；风流好色，惧内。</li>
+<li><strong>王熙凤</strong>（贾琏之妻）：王夫人内侄女，荣府实际管家；精明泼辣，嘴甜心狠，机关算尽。</li>
+<li><strong>平儿</strong>（凤姐陪嫁丫鬟）：贾琏通房，王熙凤的得力助手；善良周全，常在凤姐与众人之间周旋。</li>
+<li><strong>巧姐</strong>（贾琏、凤姐之女）：贾府败落后由刘姥姥救出，后嫁板儿（后四十回）。</li>
+<li><strong>贾元春</strong>（贾政长女）：入宫为女史，后封贤德妃，省亲大观园，是贾府盛极一时的象征。</li>
+<li><strong>贾迎春</strong>（贾赦之女）：贾府二小姐，懦弱怕事，后误嫁孙绍祖，受虐而死。</li>
+<li><strong>贾探春</strong>（贾政之女）：赵姨娘所生，贾府三小姐；精明能干，兴利除弊，后远嫁。</li>
+<li><strong>贾惜春</strong>（贾珍胞妹）：宁国府四小姐，孤介冷僻，善画，后出家为尼。</li>
+<li><strong>贾宝玉</strong>（贾政次子）：衔玉而生，厌恶仕途经济，尊重女儿，多情而叛逆；大观园怡红院主人。</li>
+<li><strong>李纨</strong>（贾珠之妻）：青年守寡，抚育贾兰；端庄本分，居稻香村。</li>
+<li><strong>贾珠</strong>（贾政长子）：李纨之夫，贾兰之父，不到二十岁便病逝。</li>
+<li><strong>贾兰</strong>（贾珠之子）：李纨之子，勤学上进，后中举。</li>
+<li><strong>贾环</strong>（贾政之子）：赵姨娘所生，宝玉异母弟；猥琐狭隘，常生事端。</li>
+<li><strong>赵姨娘</strong>（贾政之妾）：探春、贾环生母；愚妄泼辣，常与马道婆等暗中算计。</li>
+<li><strong>周姨娘</strong>（贾政之妾）：安分守己，在贾府中默默无闻。</li>
+<li><strong>李嬷嬷</strong>（宝玉奶母）：宝玉的奶母，倚老卖老，常因小事发作。</li>
+<li><strong>周瑞</strong>（荣府管家）：王夫人陪房，负责收租等事务。</li>
+<li><strong>周瑞家的</strong>（王夫人陪房）：周瑞之妻，送宫花引出许多情节。</li>
+<li><strong>王善保家的</strong>（邢夫人陪房）：抄检大观园时挑唆生事，反被探春斥责。</li>
+<li><strong>赖大</strong>（荣府大管家）：赖嬷嬷之子，贾府最有体面的管家之一。</li>
+<li><strong>赖嬷嬷</strong>（贾府老仆）：赖大之母，服侍过贾府老一辈，颇受尊重。</li>
+<li><strong>林之孝</strong>（荣府管家）：林红玉之父，荣府管事。</li>
+<li><strong>来旺</strong>（凤姐陪房）：王熙凤的陪房家人，替凤姐放利钱。</li>
+<li><strong>兴儿</strong>（贾琏小厮）：贾琏的心腹小厮，向尤二姐细说凤姐为人。</li>
+<li><strong>旺儿</strong>（凤姐小厮）：王熙凤使唤的小厮。</li>
+<li><strong>茗烟</strong>（宝玉小厮）：宝玉最贴身的小厮，机灵淘气，常替宝玉寻书买物。</li>
+<li><strong>李贵</strong>（宝玉奶兄）：宝玉的奶兄、跟班，在家塾闹学时出面弹压。</li>
+<li><strong>贾芸</strong>（贾府旁支）：认宝玉为父，靠凤姐谋得种树差事；后与小红相恋。</li>
+<li><strong>袭人</strong>（宝玉大丫鬟）：原名珍珠，宝玉的贴身大丫鬟；温柔和顺，处事周全，后嫁蒋玉菡。</li>
+<li><strong>晴雯</strong>（宝玉大丫鬟）：风流灵巧，心高气傲，因遭谗言被逐，病死。</li>
+<li><strong>麝月</strong>（宝玉大丫鬟）：稳重可靠，是怡红院中最后留在宝玉身边的丫鬟之一。</li>
+<li><strong>秋纹</strong>（宝玉丫鬟）：怡红院丫鬟，性子较直。</li>
+<li><strong>碧痕</strong>（宝玉丫鬟）：怡红院丫鬟。</li>
+<li><strong>小红</strong>（怡红院丫鬟）：原名林红玉，因避讳改名小红；伶俐能干，后跟王熙凤，嫁贾芸。</li>
+<li><strong>坠儿</strong>（怡红院小丫鬟）：因偷虾须镯被晴雯逐出。</li>
+<li><strong>芳官</strong>（梨香院戏班）：十二女伶之一，后给宝玉作丫鬟，活泼娇憨，最终出家。</li>
+<li><strong>龄官</strong>（梨香院戏班）：十二女伶之一，唱功出众，与贾蔷相恋，曾画蔷痴情。</li>
+<li><strong>藕官</strong>（梨香院戏班）：十二女伶之一，后给黛玉作丫鬟，与菂官有情。</li>
+<li><strong>蕊官</strong>（梨香院戏班）：十二女伶之一，后给宝钗作丫鬟。</li>
+<li><strong>菂官</strong>（梨香院戏班）：十二女伶之一，早逝，藕官念念不忘。</li>
+<li><strong>紫鹃</strong>（黛玉大丫鬟）：黛玉的贴身丫鬟，忠心耿耿，曾以“林家要接姑娘”试探宝玉。</li>
+<li><strong>雪雁</strong>（黛玉丫鬟）：黛玉从林家带来的小丫鬟，年纪尚小。</li>
+<li><strong>春纤</strong>（黛玉丫鬟）：潇湘馆丫鬟。</li>
+<li><strong>鸳鸯</strong>（贾母大丫鬟）：贾母最倚重的丫鬟，抗婚不从贾赦，后殉主（后四十回）。</li>
+<li><strong>金钏</strong>（王夫人丫鬟）：因与宝玉说笑被王夫人逐出，投井自尽。</li>
+<li><strong>玉钏</strong>（王夫人丫鬟）：金钏之妹，姐姐死后仍留在王夫人身边。</li>
+<li><strong>彩云</strong>（王夫人丫鬟）：与贾环相好，曾偷玫瑰露。</li>
+<li><strong>彩霞</strong>（王夫人丫鬟）：王夫人房中丫鬟。</li>
+<li><strong>司棋</strong>（迎春大丫鬟）：性情刚烈，与表弟潘又安相恋，被逐后撞墙而死。</li>
+<li><strong>侍书</strong>（探春大丫鬟）：探春的贴身丫鬟，伶俐能干。</li>
+<li><strong>入画</strong>（惜春丫鬟）：惜春的丫鬟，因私藏哥哥财物被逐。</li>
+<li><strong>抱琴</strong>（元春丫鬟）：元春入宫时随侍的丫鬟。</li>
+<li><strong>翠墨</strong>（探春丫鬟）：探春的丫鬟，曾替探春送花笺给宝玉。</li>
+<li><strong>素云</strong>（李纨丫鬟）：李纨的丫鬟。</li>
+<li><strong>碧月</strong>（李纨丫鬟）：李纨的丫鬟。</li>
+<li><strong>丰儿</strong>（凤姐小丫鬟）：王熙凤房中的小丫鬟。</li>
+<li><strong>善姐</strong>（凤姐派去的丫鬟）：王熙凤派去“服侍”尤二姐，实则百般刁难。</li>
+<li><strong>傻大姐</strong>（贾母房中粗使丫鬟）：憨傻无心，拾到绣春囊，引发抄检大观园。</li>
+<li><strong>柳五儿</strong>（柳嫂子之女）：想进怡红院当丫鬟，体弱多病，后病死（后四十回）。</li>
+<li><strong>柳嫂子</strong>（大观园小厨房管事）：柳五儿之母，掌管大观园小厨房。</li>
+<li><strong>秦显家的</strong>（大观园仆妇）：趁柳嫂子失势时争夺小厨房管事之职。</li>
+<li><strong>莲花儿</strong>（迎春丫鬟）：司棋手下的小丫鬟，曾与小厨房争执。</li>
+<li><strong>小鹊</strong>（赵姨娘丫鬟）：赵姨娘房中的小丫鬟，曾向宝玉通风报信。</li>
+<li><strong>四儿</strong>（宝玉丫鬟）：原名蕙香，因与宝玉同生日得宠，后被王夫人逐出。</li>
+</ul>
+<h3>史家</h3><ul>
+<li><strong>史湘云</strong>（贾母侄孙女）：保龄侯史鼐的侄女，父母双亡，由叔父婶母抚养；爽朗豪迈，才思敏捷。</li>
+<li><strong>史鼐</strong>（保龄侯）：史湘云的叔父，后迁委外省大员。</li>
+<li><strong>史鼎</strong>（忠靖侯）：史湘云的另一位叔父。</li>
+<li><strong>翠缕</strong>（湘云丫鬟）：史湘云的贴身丫鬟，常与湘云说笑。</li>
+</ul>
+<h3>王家</h3><ul>
+<li><strong>王子腾</strong>（王夫人之兄）：京营节度使，后升九省统制、九省都检点；王家的权势靠山。</li>
+<li><strong>王仁</strong>（王熙凤之兄）：巧姐的舅舅，后四十回中卖巧姐，忘恩负义。</li>
+</ul>
+<h3>薛家</h3><ul>
+<li><strong>薛宝钗</strong>（薛姨妈之女）：王夫人外甥女，稳重周全，博学多才；居蘅芜苑，后与宝玉成婚。</li>
+<li><strong>薛姨妈</strong>（薛蟠、宝钗之母）：王夫人之妹，带着儿女寄居荣国府，慈爱而护短。</li>
+<li><strong>薛蟠</strong>（薛姨妈之子）：宝钗之兄，不学无术，仗势欺人；娶夏金桂后家宅不宁。</li>
+<li><strong>夏金桂</strong>（薛蟠之妻）：泼悍善妒，折磨香菱，最终自食恶果。</li>
+<li><strong>香菱</strong>（薛蟠之妾）：甄士隐之女，幼年被拐，后成为薛蟠妾室；痴心学诗，命运坎坷。</li>
+<li><strong>薛蝌</strong>（薛姨妈侄子）：薛宝琴之兄，稳重正派，后与邢岫烟订婚。</li>
+<li><strong>薛宝琴</strong>（薛蝌之妹）：薛姨妈侄女，才貌双全，见多识广，深得贾母喜爱。</li>
+<li><strong>莺儿</strong>（宝钗丫鬟）：宝钗的贴身丫鬟，原名黄金莺，手巧善打络子。</li>
+<li><strong>文杏</strong>（宝钗丫鬟）：宝钗的小丫鬟。</li>
+</ul>
+<h3>林家</h3><ul>
+<li><strong>林如海</strong>（巡盐御史）：前科探花，钦点巡盐御史，林黛玉之父，病逝扬州。</li>
+<li><strong>林黛玉</strong>（林如海之女）：贾敏之女，寄居荣国府；才情高绝，多愁善感，与宝玉相知相恋，居潇湘馆。</li>
+</ul>
+<h3>金陵甄家</h3><ul>
+<li><strong>甄宝玉</strong>（甄府公子）：与贾宝玉同名同貌、性情相似，是贾宝玉的一面镜子。</li>
+<li><strong>甄应嘉</strong>（甄宝玉之父）：钦差金陵省体仁院总裁，甄府家主。</li>
+</ul>
+<h3>姑苏甄家</h3><ul>
+<li><strong>甄士隐</strong>（姑苏乡宦）：甄英莲之父，禀性恬淡，资助贾雨村；后历经变故，随跛足道人出家。</li>
+<li><strong>封氏</strong>（甄士隐之妻）：甄英莲之母，性情贤淑，女儿丢失后悲痛成疾。</li>
+<li><strong>贾雨村</strong>（知府、应天府尹）：穷儒出身，受甄士隐资助中进士；后攀附权贵，乱判葫芦案。</li>
+<li><strong>娇杏</strong>（甄家丫鬟）：因偶然回顾贾雨村，后被雨村娶为妾，又扶为正室。</li>
+<li><strong>霍启</strong>（甄家家人）：元宵节抱英莲看灯，因小解弄丢英莲，逃往他乡。</li>
+<li><strong>封肃</strong>（封氏之父）：甄士隐岳丈，势利刻薄，半哄半赚女婿的田产。</li>
+</ul>
+<h3>刘家</h3><ul>
+<li><strong>刘姥姥</strong>（狗儿岳母）：乡下老寡妇，三进荣国府；善良风趣，后在贾府败落时救出巧姐。</li>
+<li><strong>狗儿</strong>（刘姥姥女婿）：王成之子，刘氏之夫；因家计艰难，由岳母去荣国府打秋风。</li>
+<li><strong>刘氏</strong>（狗儿之妻）：刘姥姥之女，操持家务，生板儿、青儿。</li>
+<li><strong>板儿</strong>（狗儿之子）：刘姥姥的外孙，随姥姥进荣国府，后娶巧姐（后四十回）。</li>
+<li><strong>青儿</strong>（狗儿之女）：刘姥姥的外孙女。</li>
+<li><strong>王成</strong>（狗儿之父）：王夫人远族，家业萧条，病故。</li>
+</ul>
+<h3>太虚幻境</h3><ul>
+<li><strong>警幻仙子</strong>（太虚幻境仙子）：掌管风月债，引宝玉入太虚幻境，演《红楼梦》十二支曲。</li>
+<li><strong>空空道人</strong>（访道求仙者）：在青埂峰下抄录石头上的故事，后改名情僧。</li>
+<li><strong>茫茫大士</strong>（一僧一道中的僧人）：携顽石入红尘，屡次点化世人。</li>
+<li><strong>渺渺真人</strong>（一僧一道中的道人）：与茫茫大士同行，唱《好了歌》，度化甄士隐。</li>
+</ul>
+<h3>其他</h3><ul>
+<li><strong>邢岫烟</strong>（邢夫人侄女）：家境贫寒而端庄自持，后与薛蝌订婚。</li>
+<li><strong>李纹</strong>（李纨堂妹）：李纨的堂妹，随母亲来贾府小住。</li>
+<li><strong>李绮</strong>（李纨堂妹）：李纨的堂妹，与李纹一同来贾府。</li>
+<li><strong>冷子兴</strong>（都中古董商）：周瑞的女婿，与贾雨村在村肆相遇，演说荣国府。</li>
+<li><strong>妙玉</strong>（栊翠庵尼姑）：出身读书仕宦之家，带发修行，孤高自许，洁癖成性；金陵十二钗之一。</li>
+<li><strong>净虚</strong>（馒头庵尼姑）：求王熙凤出面拆散张金哥婚事，引出凤姐弄权。</li>
+<li><strong>智能</strong>（馒头庵小尼）：与秦钟相恋，后私逃进城探望秦钟。</li>
+<li><strong>马道婆</strong>（道婆）：受赵姨娘收买，用魇魔法害宝玉、凤姐。</li>
+<li><strong>王一贴</strong>（天齐庙道士）：卖膏药的道士，胡诌“妒妇方”逗宝玉大笑。</li>
+<li><strong>蒋玉菡</strong>（名伶）：忠顺王府戏子，与宝玉互赠汗巾，后娶袭人。</li>
+<li><strong>柳湘莲</strong>（世家子弟）：豪爽侠义，与宝玉交好；尤三姐自刎后出家。</li>
+<li><strong>冯紫英</strong>（神武将军之子）：宝玉的好友，行酒令、说新闻，性情豪爽。</li>
+<li><strong>卫若兰</strong>（世家公子）：脂批暗示与史湘云有婚姻之缘。</li>
+<li><strong>北静王</strong>（北静郡王）：名水溶，年轻有为，与宝玉一见如故，赠鹡鸰香串。</li>
+<li><strong>南安郡王</strong>（南安郡王）：贾府世交，其太妃曾在清虚观打醮时露面。</li>
+<li><strong>忠顺王</strong>（忠顺亲王）：与贾府不睦，派长史官到贾府索要琪官。</li>
+<li><strong>孙绍祖</strong>（迎春之夫）：大同府人氏，膂力过人，性情暴戾；娶迎春后百般虐待。</li>
+<li><strong>张友士</strong>（医生）：冯紫英荐来为秦可卿诊病的太医，医术高明。</li>
+<li><strong>胡庸医</strong>（医生）：为晴雯看病，乱用虎狼之药。</li>
+<li><strong>王太医</strong>（太医）：贾府常用太医，常为贾母、宝玉、黛玉等诊病。</li>
+<li><strong>鲍太医</strong>（太医）：曾为林黛玉诊病的太医。</li>
+<li><strong>张道士</strong>（清虚观道士）：荣国公的替身，清虚观打醮时为主持，替宝玉说亲。</li>
+<li><strong>卜世仁</strong>（香料铺掌柜）：贾芸的舅舅，刻薄吝啬，不肯赊借香料。</li>
+<li><strong>倪二</strong>（市井侠士）：绰号醉金刚，轻财尚义，借钱给贾芸。</li>
+</ul>
+</div>
+</div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>人物关系依据《红楼梦》前八十回正文与脂批整理；后四十回人物结局在说明中注明。</p>
+    <p><a href="00.htm">红楼梦脂批本新校电子版</a> · 人物关系图</p>
+  </footer>
+
+  <noscript>
+    <p class="noscript">本页的人物关系图与搜索需要启用 JavaScript。人物姓名仍可通过正文链接直接定位到本页的对应人物锚点。</p>
+  </noscript>
+
+  <script src="characters-data.js"></script>
+  <script src="characters.js"></script>
+</body>
+</html>
