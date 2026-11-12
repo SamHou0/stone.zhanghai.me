@@ -270,7 +270,7 @@
 
   function renderHouses() {
     var container = document.getElementById("houses");
-    if (!container) return;
+    if (!container || !people.length) return;
     container.innerHTML = "";
 
     var groups = Object.create(null);
