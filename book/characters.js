@@ -114,6 +114,8 @@
         y: n.y - 15,
         width: width,
         height: 30,
+        rx: 7,
+        ry: 7,
       });
       var text = svgEl("text", { x: n.x, y: n.y + 1 });
       text.textContent = person.name;
